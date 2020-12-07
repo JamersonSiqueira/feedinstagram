@@ -1,6 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Feed from './src/pages/Feed';
+import NewUser from './src/pages/Login/NewUser';
+import Login from './src/pages/Login/Login';
 import { createStackNavigator } from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native'
 
@@ -10,7 +12,9 @@ export default function App() {
   return (
     <View style={style.container}>
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="Feed">
+        <Stack.Navigator initialRouteName="Login">
+        <Stack.Screen name="Login" component={Login} />
+          <Stack.Screen name="NewUser" component={NewUser} />
           <Stack.Screen name="Feed" component={Feed} />
         </Stack.Navigator>
       </NavigationContainer>

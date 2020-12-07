@@ -30,7 +30,7 @@ export default function Feed() {
     //https://5fa103ace21bab0016dfd97e.mockapi.io/api/v1/feed?page=1&limit=4
     //utilizar o server2.js no www.mockapi.io
     axios
-    .get(`https://5fa103ace21bab0016dfd97e.mockapi.io/api/v1/feed?page=${pageNumber}&limit=4`)
+    .get(`https://5fcd72b6603c0c00164878d9.mockapi.io/feed?page=${pageNumber}&limit=4`)
     .then(response => {
       const totalItems = response.headers["x-total-count"]
       const data = response.data
