@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { Text, StyleSheet, Button , View, ScrollView, TextInput} from 'react-native';
-import { Container, Post, Header, Avatar, Name, Description, Loading } from './styles';
-
+import { Logo, CaixaTexto, Container, Post, Header, Avatar, Name, Description, Loading, Corpo, NameHeader } from './styles';
+import instalogo from '../../assets/instalogo.png';
 
 export default function NewUser(){
 
@@ -40,27 +40,33 @@ async function buttonPressed(){
     .catch(err => {
       console.log(err.message);
     })
+
+    props.navigation.navigate('Login');
   }
 
   return (
     <Container>
+      <Header>
+        <Logo source={instalogo}/>
+        <NameHeader>Novo Usuário</NameHeader>
+      </Header>
         <Name>Nome</Name>
-        <TextInput
+        <CaixaTexto
             onChangeText={handleNameChange}
             placeholder="Digite seu nome"
         />
         <Name>Nickname</Name>
-        <TextInput
+        <CaixaTexto
             onChangeText={handleUsernameChange}
             placeholder="Digite seu nick"
         />
         <Name>Email</Name>
-        <TextInput
+        <CaixaTexto
             onChangeText={handleEmailChange}
             placeholder="Digite seu email"
         />
         <Name>Senha</Name>
-        <TextInput
+        <CaixaTexto
             onChangeText={handlePasswordChange}
             placeholder="Digite sua senha"
             secureTextEntry={true}

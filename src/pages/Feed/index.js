@@ -2,12 +2,12 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { StyleSheet, FlatList,Button , View, ScrollView, TextInput} from 'react-native';
 import axios from 'axios'
 import LazyImage from '../../components/LazyImage';
-import { AsyncStorage } from 'react-native';
+import Like from '../../components/Like';
 
 
 import { Container, Post, Header, Avatar, Name, Description, Loading } from './styles';
 
-export default function Feed() {
+export default function Feed(props) {
   const [error, setError] = useState('');
   const [feed, setFeed] = useState([]);
   const [page, setPage] = useState(1);
@@ -65,8 +65,8 @@ export default function Feed() {
       } 
     } catch (error) {
       // Error saving data
+     }
     }
-  }
 
   const onSave = async (id) => {
     try {
@@ -103,10 +103,13 @@ export default function Feed() {
             <Description>
               <Name>{item.author.name}</Name> {item.description}
             </Description>
+
             <Description>
-              {comentarios}
+              <Like key={item.id} item={item} user={props.route.params.user} ></Like>
             </Description>
-           
+            <Description>
+            {comentarios}
+            </Description>
 
             <TextInput
               multiline={true}
