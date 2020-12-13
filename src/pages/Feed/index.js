@@ -1,11 +1,13 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { StyleSheet, FlatList,Button , View, ScrollView, TextInput} from 'react-native';
+import { StyleSheet, FlatList,Button , View, ScrollView, TextInput, TouchableOpacity} from 'react-native';
 import axios from 'axios'
 import LazyImage from '../../components/LazyImage';
 import Like from '../../components/Like';
+import Comments from '../../components/Comments';
+import { AsyncStorage } from 'react-native';
 
 
-import { Container, Post, Header, Avatar, Name, Description, Loading } from './styles';
+import { NameAutor, Container, Post, Header, Avatar, Name, Description, Loading, ContainerFlex, NameLike } from './styles';
 
 export default function Feed(props) {
   const [error, setError] = useState('');
@@ -76,8 +78,7 @@ export default function Feed(props) {
       // Error saving data
     }
   }
-
-    
+   
 
   useEffect(() => {
     loadPage()
@@ -86,6 +87,15 @@ export default function Feed(props) {
  
 
   const renderItem = ({item}) => {
+
+    function navegacaoLikes() {
+      props.navigation.navigate('Likes', item);
+    }
+
+    function navegacaoComentarios() {
+      props.navigation.navigate('Comentarios', item);
+    }
+
     return (
       <Post>
             <Header>
@@ -104,26 +114,19 @@ export default function Feed(props) {
               <Name>{item.author.name}</Name> {item.description}
             </Description>
 
-            <Description>
+              <ContainerFlex>
               <Like key={item.id} item={item} user={props.route.params.user} ></Like>
-            </Description>
-            <Description>
-            {comentarios}
-            </Description>
-
-            <TextInput
-              multiline={true}
-              onChangeText={(text) => setText(text)}
-              placeholder={"Comentários"}
-              style={[styles.text]}
-              maxLength={MAX_LENGTH}
-              value={text}/>
-
-            <Button
-              title="Salvar"
-              onPress={() => onSave(String(item.id))}
-              accessibilityLabel="Salvar">
-            </Button>
+            <TouchableOpacity onPress={navegacaoLikes}>
+            <NameLike>Lista de curtidores</NameLike>
+          </TouchableOpacity>
+          </ContainerFlex>
+          
+            <ContainerFlex>
+            <TouchableOpacity onPress={navegacaoComentarios}>
+            <NameAutor>Lista de comentarios</NameAutor>
+          </TouchableOpacity>
+          </ContainerFlex>
+            
 
       </Post>
     )
@@ -155,14 +158,3 @@ export default function Feed(props) {
   );
 }
 
-const styles = StyleSheet.create(
-  {text: {
-    fontSize: 30,
-    lineHeight: 33,
-    color: "#333333",
-    padding: 16,
-    paddingTop: 16,
-    minHeight: 170,
-    borderTopWidth: 1,
-    borderColor: "rgba(212,211,211, 0.3)"
-}})

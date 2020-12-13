@@ -49,13 +49,6 @@ export const NameLike = styled.Text`
   margin: 10px auto;
 `;
 
-export const NameCenter = styled.Text`
-  font-weight: bold;
-  padding-left: 15px;
-  margin: 0 auto;
-  text-align: center;
-`;
-
 export const Description = styled.Text`
   padding: 15px;
   line-height: 18px;

@@ -25,9 +25,6 @@ export default (props) => {
         .get(`https://5fcd72b6603c0c00164878d9.mockapi.io/user?search=${username}`)
         .then(response => {
           const data = response.data
-          console.log(data[0].username)
-          console.log(username)
-          console.log(password)
           if(data[0].username==null || data[0].password==null){
               console.log("NÃO ACHEI");
           } else if(data[0].username==username && data[0].password==password){

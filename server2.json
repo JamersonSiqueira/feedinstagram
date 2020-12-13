@@ -10,8 +10,20 @@
         "name": "dieegosf",
         "avatar": "https://avatars0.githubusercontent.com/u/2254731?s=50&v=4"
       },
-      "comments": {},
-      "likes":{}
+      "comments": [
+        {
+          "autor": "teste",
+          "comentario": "ótima foto!"
+        },
+        {
+          "autor": "teste2",
+          "comentario": "fotão!"
+        }
+      ],
+      "likes": [
+        "Teste",
+        "teste2"
+      ]
     },
     {
       "id": 2,
@@ -24,8 +36,19 @@
         "name": "cleitonsouza",
         "avatar": "https://avatars0.githubusercontent.com/u/4669899?s=50&v=4"
       },
-      "comments": {},
-      "likes":{}
+      "comments": [
+        {
+          "autor": "teste",
+          "comentario": "ótima foto!"
+        },
+        {
+          "autor": "teste2",
+          "comentario": "fotão!"
+        }
+      ],
+      "likes": [
+        "Teste"
+      ]
     },
     {
       "id": 3,
@@ -38,8 +61,19 @@
         "name": "pellizzetti",
         "avatar": "https://avatars2.githubusercontent.com/u/16545335?s=50&v=4"
       },
-      "comments": {},
-      "likes":{}
+      "comments": [
+        {
+          "autor": "teste",
+          "comentario": "ótima foto!"
+        },
+        {
+          "autor": "teste2",
+          "comentario": "fotão!"
+        }
+      ],
+      "likes": [
+        "teste2"
+      ]
     },
     {
       "id": 4,
@@ -52,8 +86,10 @@
         "name": "jpdemagalhaes",
         "avatar": "https://avatars3.githubusercontent.com/u/7268910?s=50&v=4"
       },
-      "comments": {},
-      "likes":{}
+      "comments": [
+        ],
+      "likes": [
+       ]
     },
     {
       "id": 5,
@@ -66,8 +102,10 @@
         "name": "cleitonsouza",
         "avatar": "https://avatars0.githubusercontent.com/u/4669899?s=50&v=4"
       },
-      "comments": {},
-      "likes":{}
+      "comments": [
+      ],
+    "likes": [
+     ]
     },
     {
       "id": 6,
@@ -80,8 +118,10 @@
         "name": "pellizzetti",
         "avatar": "https://avatars2.githubusercontent.com/u/16545335?s=50&v=4"
       },
-      "comments": {},
-      "likes":{}
+      "comments": [
+      ],
+    "likes": [
+     ]
     },
     {
       "id": 7,
@@ -94,8 +134,10 @@
         "name": "dieegosf",
         "avatar": "https://avatars0.githubusercontent.com/u/2254731?s=50&v=4"
       },
-      "comments": {},
-      "likes":{}
+      "comments": [
+      ],
+    "likes": [
+     ]
     },
     {
       "id": 8,
@@ -108,8 +150,10 @@
         "name": "cleitonsouza",
         "avatar": "https://avatars0.githubusercontent.com/u/4669899?s=50&v=4"
       },
-      "comments": {},
-      "likes":{}
+      "comments": [
+      ],
+    "likes": [
+     ]
     },
     {
       "id": 9,
@@ -122,8 +166,10 @@
         "name": "jpdemagalhaes",
         "avatar": "https://avatars3.githubusercontent.com/u/7268910?s=50&v=4"
       },
-      "comments": {},
-      "likes":{}
+      "comments": [
+      ],
+    "likes": [
+     ]
     },
     {
       "id": 10,
@@ -136,8 +182,10 @@
         "name": "pellizzetti",
         "avatar": "https://avatars2.githubusercontent.com/u/16545335?s=50&v=4"
       },
-      "comments": {},
-      "likes":{}
+      "comments": [
+      ],
+    "likes": [
+     ]
     },
     {
       "id": 11,
@@ -150,8 +198,10 @@
         "name": "dieegosf",
         "avatar": "https://avatars0.githubusercontent.com/u/2254731?s=50&v=4"
       },
-      "comments": {},
-      "likes":{}
+      "comments": [
+      ],
+    "likes": [
+     ]
     },
     {
       "id": 12,
@@ -164,8 +214,10 @@
         "name": "pellizzetti",
         "avatar": "https://avatars2.githubusercontent.com/u/16545335?s=50&v=4"
       },
-      "comments": {},
-      "likes":{}
+      "comments": [
+      ],
+    "likes": [
+     ]
     },
     {
       "id": 13,
@@ -178,8 +230,10 @@
         "name": "cleitonsouza",
         "avatar": "https://avatars0.githubusercontent.com/u/4669899?s=50&v=4"
       },
-      "comments": {},
-      "likes":{}
+      "comments": [
+      ],
+    "likes": [
+     ]
     },
     {
       "id": 14,
@@ -192,8 +246,10 @@
         "name": "jpdemagalhaes",
         "avatar": "https://avatars3.githubusercontent.com/u/7268910?s=50&v=4"
       },
-      "comments": {},
-      "likes":{}
+      "comments": [
+      ],
+    "likes": [
+     ]
     },
     {
       "id": 15,
@@ -206,8 +262,10 @@
         "name": "jpdemagalhaes",
         "avatar": "https://avatars3.githubusercontent.com/u/7268910?s=50&v=4"
       },
-      "comments": {},
-      "likes":{}
+      "comments": [
+      ],
+    "likes": [
+     ]
     },
     {
       "id": 16,
@@ -220,8 +278,10 @@
         "name": "pellizzetti",
         "avatar": "https://avatars2.githubusercontent.com/u/16545335?s=50&v=4"
       },
-      "comments": {},
-      "likes":{}
+      "comments": [
+      ],
+    "likes": [
+     ]
     },
     {
       "id": 17,
@@ -234,8 +294,10 @@
         "name": "cleitonsouza",
         "avatar": "https://avatars0.githubusercontent.com/u/4669899?s=50&v=4"
       },
-      "comments": {},
-      "likes":{}
+      "comments": [
+      ],
+    "likes": [
+     ]
     },
     {
       "id": 18,
@@ -248,8 +310,10 @@
         "name": "dieegosf",
         "avatar": "https://avatars0.githubusercontent.com/u/2254731?s=50&v=4"
       },
-      "comments": {},
-      "likes":{}
+      "comments": [
+      ],
+    "likes": [
+     ]
     },
     {
       "id": 19,
@@ -262,8 +326,10 @@
         "name": "cleitonsouza",
         "avatar": "https://avatars0.githubusercontent.com/u/4669899?s=50&v=4"
       },
-      "comments": {},
-      "likes":{}
+      "comments": [
+      ],
+    "likes": [
+     ]
     },
     {
       "id": 20,
@@ -276,7 +342,9 @@
         "name": "dieegosf",
         "avatar": "https://avatars0.githubusercontent.com/u/2254731?s=50&v=4"
       },
-      "comments": {},
-      "likes":{}
+      "comments": [
+      ],
+    "likes": [
+     ]
     }
   ]
